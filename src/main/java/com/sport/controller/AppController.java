@@ -129,7 +129,7 @@ public class AppController {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return "productList";
+		return "ProductList";
 
 	}
 	
@@ -148,7 +148,7 @@ public class AppController {
 	@RequestMapping("newCategory")
 	public String newCategory(@ModelAttribute("category") Category cat ) {
 		dao.saveCategory(cat);
-		return "categoryList";
+		return "CategoryList";
 	}
 	
 	@RequestMapping("logout")
