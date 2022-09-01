@@ -119,10 +119,12 @@ public class AppController {
 		}
 
 		try {
-			int id=dao.allProducts().get(0).getId();
+			int id=0;
+			if(dao.allProducts().size()!=0)
+				id=dao.allProducts().get(0).getId();
 			id=id+1;
 			byte[] bytes = file.getBytes();
-			Path path = Paths.get("C:\\Users\\pooja gayathri p v\\Desktop\\Simplilearn\\SportyShoes\\ShoesImg\\shoe-"+id+".png");
+			Path path = Paths.get(id+".png");
 			Files.write(path, bytes);
 			dao.saveProduct(prod);
 
