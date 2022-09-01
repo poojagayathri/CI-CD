@@ -118,6 +118,7 @@ public class AppController {
 			System.out.println("Please select a file and try again");
 		}
 
+		//check commit and pipeline
 		try {
 			int id=0;
 			if(dao.allProducts().size()!=0)
