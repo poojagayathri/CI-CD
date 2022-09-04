@@ -42,6 +42,7 @@ public class AppController {
 	public String start(Model model) {
 		System.out.println("entere here");
 		model.addAttribute("user",new Users());
+		System.out.println("entere here after users");
 		return "Login";
 	}
 	
