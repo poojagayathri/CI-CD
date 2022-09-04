@@ -40,13 +40,8 @@ public class AppController {
 	
 	@RequestMapping("/")
 	public String start(Model model) {
+		System.out.println("entere here");
 		model.addAttribute("user",new Users());
-		return "Login";
-	}
-	
-	@ResponseBody
-	@RequestMapping("/error")
-	public String error(Model model) {
 		return "Login";
 	}
 	
