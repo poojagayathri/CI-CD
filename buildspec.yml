@@ -10,5 +10,5 @@ phases:
       - echo Build completed successfully
 artifacts:
   files:
-    - target/SportyShoes-0.0.1-SNAPSHOT.jar
+    - target/SportyShoes-0.0.1-SNAPSHOT.war
   discard-paths: yes
